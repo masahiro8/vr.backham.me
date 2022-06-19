@@ -8,7 +8,23 @@
       <div class="overlay">
         <h2>新次元の3D体験。<br />ウェブサイトの常識が一変します。</h2>
       </div>
-      <video v-if="src" :src="src" muted autoplay playsinline loop></video>
+      <!-- <video v-if="src" :src="src" muted autoplay playsinline loop></video> -->
+      <div class="to_scroll">
+        <svg
+          width="71"
+          height="88"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M70.5 35.523c0 19.343-15.67 35.023-35 35.023S.5 54.866.5 35.523C.5 16.18 16.17.5 35.5.5s35 15.68 35 35.023Z"
+            stroke="#000"
+          />
+          <path d="m22 44.648 13.5 13.5 13.5-13.5" stroke="#000" />
+          <path d="m22 31.763 13.5 13.5 13.5-13.5M36 14v30.553" stroke="#000" />
+        </svg>
+        <div class="to_scroll-text">Scroll</div>
+      </div>
     </div>
   </div>
 </template>
@@ -92,6 +108,22 @@
       margin: 0;
       letter-spacing: 0.435em;
     }
+  }
+
+  .to_scroll {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .to_scroll-text {
+    letter-spacing: 0.8em;
+    text-align: center;
   }
 
   @media screen and (max-width: 559px) {

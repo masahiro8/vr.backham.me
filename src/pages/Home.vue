@@ -1,6 +1,7 @@
 <template>
-  <div class="main">
+  <div ref="page" class="main">
     <Modal />
+    <Cycle :pageRect="pageRect" />
     <transition name="fade">
       <Loading
         v-if="!isCloseLoading"
@@ -49,6 +50,7 @@
   import InfoView from '../components/InfoView/index.vue';
   import Header from '../components/Header/index.vue';
   import Loading from '../components/Loading/index.vue';
+  import Cycle from '../components/Cycle/Cycle.vue';
   import { popups } from '../assets/popups';
   import { ASSETS } from '../assets/assets';
   import { loader } from '../util/loader';
@@ -60,7 +62,7 @@
 
   const TITLES = {
     TITLE: 'BACKHAM VR',
-    SUBTITLE: 'New experience value',
+    SUBTITLE: 'New experience',
   };
 
   export default {
@@ -77,6 +79,7 @@
         isShowModal: false,
         OBJECT_INFO,
         selectedId: null,
+        pageRect: null,
       };
     },
     async mounted() {
@@ -96,6 +99,7 @@
       Footer,
       InfoView,
       Loading,
+      Cycle,
     },
 
     computed: {
@@ -134,13 +138,15 @@
         this.ASSETS = {
           GLTF_MODEL: _ASSETS.find((item) => item.key === 'GLTF_MODEL'),
         };
-        console.log('Loaded');
         this.isLoaded = true;
 
         setTimeout(() => {
-          console.log('Mount');
           this.isCloseLoading = true;
           ScrollEventControll.start();
+
+          setTimeout(() => {
+            this.pageRect = this.$refs.page.getBoundingClientRect();
+          }, 100);
         }, 3000);
       },
 

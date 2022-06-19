@@ -14,22 +14,17 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 200px;
   }
   .about-contents {
     margin: auto;
     width: 58.125em;
     position: relative;
     z-index: 1;
-    p {
-      padding-top: 1.875em;
-      font-size: 20px;
-      margin: 0;
-      line-height: 2.25em;
-      letter-spacing: 0.4em;
-      font-weight: 600;
-    }
+    display: flex;
+    justify-content: center;
   }
+
   @media screen and (max-width: 559px) {
     .about-contents {
       padding: 48px 15px 15px;
