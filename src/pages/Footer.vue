@@ -1,0 +1,87 @@
+<template>
+  <div class="footer">
+    <div class="footer-contents">
+      <p class="footer-subtitle">{{ subtitle }}</p>
+      <h2 class="footer-title">{{ title }}</h2>
+      <div class="footer-message">
+        <p>あらゆるWebサイトに、</p>
+        <p>驚くほど新しい体験を。</p>
+      </div>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="/images/vrmonkey_tran.png" alt="" />
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="footer-contact">
+          <p>お問い合わせ</p>
+          <p>victoria@backham.me</p>
+          <p>090-8497-5761</p>
+          <p>バッカム株式会社</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  export default {
+    props: {
+      src: {
+        type: String,
+        defaultValue: null,
+      },
+      title: {
+        type: String,
+        default: 'TITLE',
+      },
+      subtitle: {
+        type: String,
+        default: 'SUBTITLE',
+      },
+    },
+  };
+</script>
+<style lang="scss" scoped>
+  .footer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.6em;
+    text-align: center;
+  }
+  .footer-title {
+    font-size: 32px;
+  }
+  .footer-subtitle {
+    font-size: 16px;
+  }
+  .footer-message {
+    font-size: 48px;
+    padding: 16px;
+    text-align: center;
+    @media screen and (max-width: 559px) {
+      font-size: 24px;
+    }
+  }
+
+  .footer-contact {
+    font-size: 24px;
+    padding: 16px;
+    text-align: center;
+    @media screen and (max-width: 559px) {
+      font-size: 16px;
+    }
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    img {
+      width: 128px;
+    }
+  }
+</style>

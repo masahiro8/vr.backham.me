@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>BACKHAM VR</title>
+    <meta
+      name="keywords"
+      content="3D, VR, AR, AI, frontend, フロントエンド, WebGL, インタラクティブ, メタバース, リッチコンテンツ,"
+    />
+    <meta
+      name="description"
+      content="BACKHAMは、インタラクティブなリッチコンテンツ開発を得意としたクリエイティブスタジオです。"
+    />
+    <meta property="og:title" content="BACKHAM VR" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <script>
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
