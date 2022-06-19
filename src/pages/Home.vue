@@ -122,7 +122,6 @@
       async onLoadAssets() {
         const _ASSETS = await loader().getFiles(
           [ASSETS.GLTF_MODEL],
-          // [ASSETS.HEAD_MOVIE, ASSETS.GLTF_MODEL],
           (progress) => {
             const total = Object.keys(progress).length * 100;
             const current = Object.keys(progress)
@@ -133,7 +132,6 @@
         );
 
         this.ASSETS = {
-          // HEAD_MOVIE: _ASSETS.find((item) => item.key === 'HEAD_MOVIE'),
           GLTF_MODEL: _ASSETS.find((item) => item.key === 'GLTF_MODEL'),
         };
         console.log('Loaded');
