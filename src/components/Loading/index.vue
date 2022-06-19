@@ -12,7 +12,7 @@
         <span>{{ `${progress.toFixed(2)}%` }}</span>
       </div>
     </div>
-    <div class="Loading__line"></div>
+    <!-- <div class="Loading__line"></div> -->
   </div>
 </template>
 <script>

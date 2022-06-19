@@ -16,8 +16,7 @@
         <div class="footer-contact">
           <p>お問い合わせ</p>
           <p>victoria@backham.me</p>
-          <p>090-8497-5761</p>
-          <p>バッカム株式会社</p>
+          <p><a href="https://backham.me">バッカム株式会社</a></p>
         </div>
       </div>
     </div>
@@ -69,6 +68,14 @@
     font-size: 24px;
     padding: 16px;
     text-align: center;
+
+    a {
+      color: black;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
     @media screen and (max-width: 559px) {
       font-size: 16px;
     }
