@@ -8,7 +8,12 @@
   import Vue from 'vue';
   import VueSocialSharing from 'vue-social-sharing';
   import Home from './pages/Home.vue';
+  import VueGtag from 'vue-gtag';
+
   Vue.use(VueSocialSharing);
+  Vue.use(VueGtag, {
+    config: { id: 'G-STL7GS8K1K' },
+  });
 
   export default {
     name: 'App',
