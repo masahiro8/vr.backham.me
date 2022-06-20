@@ -8,6 +8,21 @@
         <p>驚くほど新しい体験を。</p>
       </div>
       <div class="footer-container">
+        <div class="footer-lisence-title">License</div>
+        <div class="footer-lisence">
+          3D model "iPhone 13 Pro Max" ©
+          <a href="https://datsketch.artstation.com/" target="_blank"
+            >DatSketch</a
+          >
+          (<a
+            href="https://creativecommons.org/licenses/by/4.0/"
+            target="_blank"
+          >
+            Licensed under CC BY 4.0</a
+          >)
+        </div>
+      </div>
+      <div class="footer-container">
         <div class="footer-logo">
           <img src="/images/vrmonkey_tran.png" alt="" />
         </div>
@@ -42,7 +57,7 @@
 </script>
 <style lang="scss" scoped>
   .footer {
-    height: 100vh;
+    padding-top: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,9 +96,33 @@
     }
   }
 
+  .footer-lisence-title {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .footer-lisence {
+    font-size: 16px;
+    padding: 48px 16px;
+    letter-spacing: 0.1em;
+    a {
+      color: black;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    @media screen and (max-width: 559px) {
+      font-size: 16px;
+    }
+  }
+
   .footer-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    padding: 64px 0;
   }
 
   .footer-logo {
