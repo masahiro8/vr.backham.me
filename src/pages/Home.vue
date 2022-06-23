@@ -35,6 +35,7 @@
         :class="isShowModal ? 'isModal' : ''"
       />
       <!-- <ScrollNavi /> -->
+      <Case />
       <Footer :title="TITLES.TITLE" :subtitle="TITLES.SUBTITLE" />
     </div>
   </div>
@@ -47,6 +48,7 @@
   import Top from './Top.vue';
   import About from './About.vue';
   import Footer from './Footer.vue';
+  import Case from './Case.vue';
   import InfoView from '../components/InfoView/index.vue';
   import Header from '../components/Header/index.vue';
   import Loading from '../components/Loading/index.vue';
@@ -100,6 +102,7 @@
       InfoView,
       Loading,
       Cycle,
+      Case,
     },
 
     computed: {

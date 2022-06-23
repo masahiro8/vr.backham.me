@@ -1,12 +1,14 @@
 <template>
   <div class="footer">
     <div class="footer-contents">
-      <p class="footer-subtitle">{{ subtitle }}</p>
-      <h2 class="footer-title">{{ title }}</h2>
       <div class="footer-message">
         <p>あらゆるWebサイトに、</p>
         <p>驚くほど新しい体験を。</p>
       </div>
+      <div class="spacer"></div>
+      <p class="footer-subtitle">{{ subtitle }}</p>
+      <h2 class="footer-title">{{ title }}</h2>
+      <div class="spacer"></div>
       <div class="footer-container">
         <div class="footer-lisence-title">License</div>
         <div class="footer-lisence">
@@ -56,6 +58,9 @@
   };
 </script>
 <style lang="scss" scoped>
+  .spacer {
+    height: 64px;
+  }
   .footer {
     padding-top: 48px;
     display: flex;
