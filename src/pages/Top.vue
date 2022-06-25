@@ -59,6 +59,7 @@
     left: 0;
     position: absolute;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     h2 {
