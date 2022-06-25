@@ -7,6 +7,7 @@
     <div class="contents">
       <div class="overlay">
         <h2>新次元の3D体験。<br />ウェブサイトの常識が一変します。</h2>
+        <img class="logo" src="/images/vrmonkey_tran.png" alt="BACKHAM" />
       </div>
       <!-- <video v-if="src" :src="src" muted autoplay playsinline loop></video> -->
       <div class="to_scroll">
@@ -124,6 +125,10 @@
   .to_scroll-text {
     letter-spacing: 0.8em;
     text-align: center;
+  }
+
+  .logo {
+    width: 128px;
   }
 
   @media screen and (max-width: 559px) {

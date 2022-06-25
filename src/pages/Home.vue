@@ -134,8 +134,6 @@
             const current = Object.keys(progress)
               .map((key) => progress[key].progress)
               .reduce((prev, current) => prev + current);
-
-            console.log('loading', total, Math.ceil(current));
             this.loadingProgress = (Math.ceil(current) / total) * 100;
           }
         );

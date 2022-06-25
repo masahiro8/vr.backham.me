@@ -43,6 +43,4 @@ export const addDots = ({
   // 物体を作成
   const mesh = new THREE.Points(geometry, material);
   scene.add(mesh);
-
-  console.log('Add dots');
 };

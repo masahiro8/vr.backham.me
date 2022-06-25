@@ -26,7 +26,9 @@
       </div>
       <div class="footer-container">
         <div class="footer-logo">
-          <img src="/images/vrmonkey_tran.png" alt="" />
+          <a href="https://backham.me">
+            <img src="/images/vrmonkey_tran.png" alt=""
+          /></a>
         </div>
       </div>
       <div class="footer-container">

@@ -5,5 +5,4 @@ export const meta = {
   description: 'BACKHAM VR',
 };
 
-export const shareUrl =
-  'https://www.okinawatimes.co.jp/common/otp/feature/the32nd-army-headquarters-cave/';
+export const shareUrl = 'https://vr.backham.me';

@@ -6,14 +6,14 @@
         <p class="title">{{ title }}</p>
       </li>
     </ul>
-    <!-- <div class="header-sns">
+    <div class="header-sns">
       <a class="header-btn" :href="twitterURL" target="_blank" rel="nofollow">
         <img :src="`./images/i_twitter.png`" alt="Twitter" />
       </a>
       <a class="header-btn" :href="facebookURL" target="_blank" rel="nofollow">
         <img :src="`./images/i_facebook.png`" alt="Facebook" />
       </a>
-    </div> -->
+    </div>
   </div>
 </template>
 <script>
